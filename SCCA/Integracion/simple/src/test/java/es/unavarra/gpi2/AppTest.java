@@ -33,6 +33,7 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+		String s = "Hello World!";
+        assertTrue( s.equals(App.getString()));
     }
 }
