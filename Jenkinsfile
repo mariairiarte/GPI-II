@@ -18,7 +18,7 @@ pipeline {
 					sh './gradlew'
 				}
 				echo 'Compilar Arduino'
-				dir('SCCA/Sensores/FooProject'){ 
+				dir('SCCA/Sensores/MyArduinoProject/src/FooProject'){ 
 					sh 'make' 
 				}
 			}
