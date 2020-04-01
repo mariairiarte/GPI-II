@@ -2,7 +2,7 @@ pipeline {
 	agent any
     stages {
 		stage('git') {
-			steps { sh 'git clone https://github.com/mariairiarte/GPI-II.git' }
+			steps { sh 'git clone https://github.com/mariairiarte/GPI-II' }
 		}
 		stage('Build') {
 			steps {
