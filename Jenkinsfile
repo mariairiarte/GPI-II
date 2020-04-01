@@ -1,7 +1,7 @@
 pipeline {
     stages {
 		stage('git') {
-			steps { git url: 'https://github.com/mariairiarte/GPI-II.git' }
+			steps { sh 'git clone https://github.com/mariairiarte/GPI-II.git' }
 		}
 		stage('Build') {
 			steps {
@@ -19,7 +19,7 @@ pipeline {
 				}
 				echo 'Compilar Arduino'
 				dir('SCCA/Sensores/FooProject'){ 
-					sh 'makes' 
+					sh 'make' 
 				}
 			}
 		}
