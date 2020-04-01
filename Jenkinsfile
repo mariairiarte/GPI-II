@@ -6,7 +6,6 @@ pipeline {
 		}
 		stage('Build') {
 			steps {
-				sh 'mvn -B -DskipTests clean package'
 				echo 'Compilar Simple'
 				dir('SCCA/Integracion/simple') {
 					sh 'mvn compile'
